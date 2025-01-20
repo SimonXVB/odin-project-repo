@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px dashed whitesmoke;
+}
+
+.nav span {
+    font-family: 'Oswald','Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav button {
+    display: flex;
+    width: 200px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    border: 0;
+    font-family: 'Oswald','Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+.nav button svg{
+    width: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

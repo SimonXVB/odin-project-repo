@@ -1,0 +1,26 @@
+.link {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:visited {
+    color: black;
+}
+
+.link:hover {
+    background-color: rgba(128, 128, 128, 0.411);
+}
+
+.link:active {
+    color: black;
+    background-color: rgba(128, 128, 128, 0.311);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 5px solid black;
+}

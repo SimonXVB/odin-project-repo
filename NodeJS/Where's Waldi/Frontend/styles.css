@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mogra&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.836) 0%, rgba(250,154,48,1) 100%);
+    background-attachment: fixed;
+}
+
+#header-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#header  {
+    font-family: "Mogra", system-ui;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+#nav-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+#leaderboard, #startButton {
+    font-family: "Mogra", system-ui;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: none;
+    text-decoration: underline;
+    padding: 0;
+    font-size: 1.6rem;
+}
+
+#score {
+    font-family: "Mogra", system-ui;
+    color: white;
+    font-size: 2rem;
+    border: none;
+}
+
+#leaderboard:hover, #startButton:hover {
+    color: rgb(0, 0, 0);
+}
+
+#container {
+    overflow: scroll;
+    text-align: center;
+}
+
+#container canvas {
+    border: 6px solid white;
+    border-radius: 8px;
+}
+
+#openLeaderboardModal {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    border: 0;
+    border-radius: 5px;
+}
+
+#leaderboard-header {
+    font-size: 1.5rem;
+    font-family: "Mogra", system-ui;
+    padding: 15px;
+    padding-left: 0;
+}
+
+#leaderboard-div {
+    font-family: "Mogra", system-ui;
+    padding: 20px 0;
+}
+
+#openLeaderboardModal button{
+    font-family: "Mogra", system-ui;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+#openLeaderboardModal button:hover{
+    color: white;
+}
+
+#entry{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid black;
+}
+
+#entry:last-child {
+    margin-bottom: 0;
+}
+
+#nextModal {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    border: 0;
+    border-radius: 5px;
+    font-family: "Mogra", system-ui;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+#nextModal button {
+    font-family: "Mogra", system-ui;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+#nextModal button:hover{
+    color: white;
+}
+
+#leaderboardEntry {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    border: 0;
+    border-radius: 5px;
+    font-family: "Mogra", system-ui;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+#leaderboardEntry div{
+    padding: 10px;
+    padding-left: 0;
+}
+
+#leaderboardEntry button {
+    font-family: "Mogra", system-ui;
+    cursor: pointer;
+    border: 0;
+    background: none;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+#leaderboardEntry input {
+    border: 0;
+    border-bottom: 2px solid black;
+    background: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+#leaderboardEntry input::placeholder {
+    font-family: "Mogra", system-ui;
+}
+
+#leaderboardEntry input:focus {
+    outline: none;
+}
+
+#leaderboardEntry button:hover {
+    color: white;
+}

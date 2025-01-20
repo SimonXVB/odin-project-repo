@@ -1,0 +1,33 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 200px;
+}
+
+form button {
+    width: 207.5px;
+    cursor: pointer;
+}
+
+#error {
+    display: none;
+}
+
+#country-error {
+    display: none;
+}
+
+#zip-error {
+    display: none;
+}
+
+#pass-error {
+    display: none;
+}
+
+#passCon-error {
+    display: none;
+}

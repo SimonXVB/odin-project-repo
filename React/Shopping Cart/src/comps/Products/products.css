@@ -1,0 +1,96 @@
+.wrapper {
+    margin-top: 140px;
+    display: flex;
+    row-gap: 50px;
+    column-gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products {
+    display: flex;
+    width: 610px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+.products img {
+    width: 250px;
+    height: 250px;
+}
+
+.desc {
+    padding-left: 20px;
+}
+
+.desc div{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 0;
+    color: white;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.buttons button:active {
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+.buttons div{
+    display: flex;
+    color: white;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+.details {
+    height: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons div p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addCart {
+    border: 0;
+    border-radius: 0;
+    width: 150px;
+    margin-top: 5px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addCart:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.addCart:active {
+    background-color: rgba(255, 255, 255, 0.356);
+}

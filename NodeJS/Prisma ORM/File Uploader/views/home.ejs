@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <% if(!user) {%>
+    <form action="/log-in" method="POST">
+        <input name="username" placeholder="Username">
+        <input name="password" placeholder="Password">
+        <button type="submit">Log In</button>
+    </form>
+    <% }; %>
+
+    <% if(user) {%>
+        <p>Welcome, <%= user.username %></p>
+        <a href="/createFolder" style="margin: 10px 0px; display: block;">Create a Folder</a>
+        <a href="/log-out" style="margin: 10px 0px; display: block;">Log Out</a>
+
+        <% folders.forEach((folder) => { %>
+            <div style="border: 2px solid black;">
+                <span>Name: <%= folder.name %></span>
+                <form action="/upload/<%= folder.id %>" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="fileName">
+                    <button type="submit">Submit</button>
+                </form>
+                <% folder.File.forEach((file) => { %>
+                    <div style="border: 2px solid black; margin: 10px 0px;">
+                        <span>Name: <%= file.originalName %></span>
+                        <br>
+                        <span>Filename: <%= file.filename %></span>
+                        <br>
+                        <span>Size: <%= file.size %> Bytes</span>
+                        <br>
+                        <span>Upload Date: <%= file.date %></span>
+                        <br>
+                        <a href="/download/<%= file.filename %>">Download File</a>
+                        <br>
+                        <a href="/delete/<%= file.id %>" onclick="return confirm('Are you sure?');">Delete File</a>
+                    </div>
+                <% }) %>
+                <br>
+                <a href="/deleteFolder/<%= folder.id %>" style="margin: 10px 0px;" onclick="return confirm('Are you sure?');">Delete Folder</a>
+            </div>
+        <% }); %>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    background-color:#fff49b;
+}
+
+/*Header start*/
+#header-div {
+    padding: 5px 20px;
+    background-color: whitesmoke;
+    width: 100%;
+    border-bottom: 5px solid black;
+}
+
+#header {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+/*Header end*/
+
+/*Player input start*/
+#player-input{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#player-input input {
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#player-input input:focus {
+    outline: 2px solid black; 
+}
+
+#player-input input::placeholder{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#start {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#start button {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+    letter-spacing: 0.1rem;
+}
+
+#start :hover {
+    cursor: pointer;
+}
+
+#start :disabled {
+    cursor: unset;
+}
+/*Player input end*/
+
+/*Placement grid start*/
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100%;
+}
+
+#ship-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    width: 70%;
+    margin: auto;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px; 
+    width: 70%;
+    height: fit-content;
+}
+
+.grid-square {
+    border-radius: 0;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.square {
+    border: 4px solid black;
+}
+
+.square div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.square button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    box-shadow: 0;
+    border: 0;
+    border-top: 4px solid black;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+#controls-container1 {
+    grid-row: 6/7;
+    grid-column: 1/1;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+#currentP {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    border: 2px solid black;
+    background-color: white;
+}
+
+#controls-container2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-row: 7/7;
+    text-align: center;
+    align-content: center;
+    border: 2px solid black;
+}
+
+#controls-container2 button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0;
+    border: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+#log {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    border: 2px solid black;
+    padding: 0.5rem 0;
+    background-color: white;
+}
+/*Placement grid end*/
+
+/*Hit grid start*/
+#current-player {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    border: 5px solid black;
+    background-color: white;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+#switch {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    border: 5px solid black;
+    cursor: pointer;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+#win {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 0;
+}
+/*Hit grid end*/

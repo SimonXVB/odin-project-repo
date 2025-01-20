@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.listings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 70%;
+}
+
+.product {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 5px solid black;
+   max-width: 600px;
+   min-height: 200px;
+   margin: 20px;
+   padding: 20px;
+}
+
+.product img{
+    width: 200px;
+    height: 200px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.details div{
+    padding-bottom: 20px;
+}
+
+.details button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+    width: 50%;
+}
+
+@media (max-width: 1000px) {
+    .product {
+        flex-direction: column;
+    }
+}
