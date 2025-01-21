@@ -2,7 +2,7 @@ const controller = require("../controllers/controller");
 const passport = require("passport");
 const { Router } = require("express");
 const multer  = require('multer')
-const upload = multer({ dest: "C:/Users/mache/OneDrive/Desktop/Uploads"});
+const upload = multer({ dest: "C:"});
 
 const mainRouter = Router();
 
